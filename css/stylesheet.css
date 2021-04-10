@@ -1,364 +1,87 @@
 * {
 	box-sizing: border-box;
+	font-size: 16px;
 }
 
-body {
-	margin: 25px;
+.row{
+	width: 100%;
+	}
+
+h1{
+	 font-size: 175%;
+	 width: 100%;
+	 text-align: center;
 }
 
-h1 {
-	color: black;
-	font-size: 4vw;
-	font-family: 'Bebas Neue', cursive;
-	text-align: center;
+div > span {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 1px solid black;
+  padding: 5px;
+  font-size: 125%;
 }
-/* MEDIA QUERY FOR BIG DESKTOP SCREEN */
-@media(min-width: 1870px){
-	div {  	
-		font-size: 1.6vw;
-		padding-top: 45px;
-		padding-right: 3px;
-		padding-left: 5px;
-		padding-bottom: 3px;
-		width: 30vw;
-		height: 350px;
-		background-color: #A8A0A0;
+
+#chicken {
+	background-color: #ff9999;
+}
+
+#beef {
+	background-color: #cc0000;
+}
+
+#sushi {
+	background-color: #ffffb3;
+}
+
+/* LARGE SCREENS */
+@media (min-width: 992px){
+	.col-lg-4 {
+		width: 33.33%;
 		float: left;
-		margin: 20px;
-		border-style: solid;
-		border-color: black;
-		border-width: 4px;
 		position: relative;
-		font-family: 'Sacramento', cursive;
-		line-height: 140%;
+		border: 1px solid black;
+		height: 100px;
 		overflow: hidden;
-	}
-
-	div > div {
-		width: 10vw;
-		height: 2.2vw;
-		position: absolute;
-		top: -24px;
-		right: -24px;
-		text-align: center;
-		font-family: 'Permanent Marker', cursive;
-		font-size: 2vw;
-		padding-top: 0px;
-		line-height: normal;
-		overflow: hidden;
-	}
-
-	div #section1{
-		background-color: #ff9999;
-	}
-
-	div #section2{
-		background-color: #cc0000;
-		color: white;
-	}
-
-	div #section3{
-		background-color: #ffffb3;
-	}
-
-	div > span {
-		position: absolute;
-		top: -18px;
-		right: 60px;
-		padding-top: 6px;
-	}
-
-	div #section1 > span {
-		right: 30px;
-	}
-}
-
-/* MEDIA QUERY FOR MEDIUM DESKTOP SCREEN */
-@media (min-width: 1350px) and (max-width: 1869px){
-	div {  	
-			font-size: 1.8vw;
-			padding-top: 45px;
-			padding-right: 3px;
-			padding-left: 5px;
-			padding-bottom: 3px;
-			width: 28vw;
-			height: 350px;
-			background-color: #A8A0A0;
-			float: left;
-			margin: 19px;
-			border-style: solid;
-			border-color: black;
-			border-width: 4px;
-			position: relative;
-			font-family: 'Sacramento', cursive;
-			line-height: 140%;
-			overflow: hidden;
-		}
-
-	div > div {
-		width: 10vw;
-		height: 2.2vw;
-		position: absolute;
-		top: -23px;
-		right: -23px;
-		text-align: center;
-		font-family: 'Permanent Marker', cursive;
-		font-size: 2vw;
-		padding-top: 0px;
-		line-height: normal;
-		overflow: hidden;
-	}
-
-	div #section1{
-		background-color: #ff9999;
-	}
-
-	div #section2{
-		background-color: #cc0000;
-		color: white;
-	}
-
-	div #section3{
-		background-color: #ffffb3;
-	}
-
-	div > span {
-		position: absolute;
-		top: -16px;
-		right: 60px;
-		padding-top: 5px;
-	}
-
-	div #section1 > span {
-		right: 30px;
-	}
-}
-
-/* MEDIA QUERY FOR SMALL DESKTOP SCREEN */
-@media (min-width: 993px) and (max-width: 1349px){
-
-	h1{
-		font-size: 4vw;
-	}
-
-	div {  	
-			font-size: 2.5vw;
-			padding-top: 45px;
-			padding-right: 3px;
-			padding-left: 5px;
-			padding-bottom: 3px;
-			width: 28vw;
-			height: 350px;
-			background-color: #A8A0A0;
-			float: left;
-			margin: 15px;
-			border-style: solid;
-			border-color: black;
-			border-width: 4px;
-			position: relative;
-			font-family: 'Sacramento', cursive;
-			line-height: 140%;
-			overflow: hidden;
-		}
-
-	div > div {
-		width: 12vw;
-		height: 4vw;
-		position: absolute;
-		top: -23px;
-		right: -23px;
-		text-align: center;
-		font-family: 'Permanent Marker', cursive;
-		font-size: 2.5vw;
-		padding-top: 0px;
-		line-height: normal;
-		overflow: hidden;
-	}
-
-
-
-	div #section1{
-		background-color: #ff9999;
-	}
-
-	div #section2{
-		background-color: #cc0000;
-		color: white;
-	}
-
-	div #section3{
-		background-color: #ffffb3;
-	}
-
-	div > span {
-		position: absolute;
-		top: -6px;
-		right: 30px;
-		padding-top: 5px;
-	}
-
-	div #section1 > span {
-		right: 15px;
-	}
-}
-
-/* MEDIA QUERY FOR TABLET */
-@media (min-width: 768px) and (max-width: 992px){
-
-	h1{
-		font-size: 4vw;
-	}
-
-	#first, #second {
-			font-size: 2.8vw;
-			padding-top: 45px;
-			padding-right: 3px;
-			padding-left: 5px;
-			padding-bottom: 3px;
-			width: 42vw;
-			height: 350px;
-			background-color: #A8A0A0;
-			float: left;
-			margin: 12px;
-			border-style: solid;
-			border-color: black;
-			border-width: 4px;
-			position: relative;
-			font-family: 'Sacramento', cursive;
-			line-height: 140%;
-			overflow: hidden;
-			position: relative;
-		}
-
-	#third {
-		font-size: 2.8vw;
-		padding-top: 45px;
-		padding-right: 3px;
-		padding-left: 5px;
-		padding-bottom: 3px;
-		width: 87vw;
-		height: 200px;
+		height: 150px;
 		background-color: #A8A0A0;
-		float: left;
-		margin: 12px;
-		border-style: solid;
-		border-color: black;
-		border-width: 4px;
-		position: relative;
-		font-family: 'Sacramento', cursive;
-		line-height: 140%;
-		overflow: hidden;
-		position: relative;
-	}
+			}
 
-	div > div {
-		width: 12vw;
-		height: 3.5vw;
-		position: absolute;
-		top: -4px;
-		right: -4px;
-		border-style: solid;
-		border-color: black;
-		border-width: 4px;
-		text-align: center;
-		font-family: 'Permanent Marker', cursive;
-		font-size: 2.5vw;
-		padding-top: 0px;
-		line-height: normal;
-		overflow: hidden;
-	}
-
-	div #section1{
-		background-color: #ff9999;
-	}
-
-	div #section2{
-		background-color: #cc0000;
-		color: white;
-	}
-
-	div #section3{
-		background-color: #ffffb3;
-	}
-
-	div > span {
-		position: absolute;
-		top: -10px;
-		right: 30px;
-		padding-top: 5px;
-	}
-
-	div #section1 > span {
-		right: 15px;
-	}
 }
 
-/* MEDIA QUERY FOR MOBILE */
+/* MEDIUM SCREENS */
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-6 {
+		width: 50%;
+		float: left;
+		position: relative;
+		border: 1px solid black;
+		height: 100px;
+		overflow: hidden;
+		height: 150px;
+		background-color: #A8A0A0;
+	}
+	#ownRow {
+		width: 100%;
+		position: relative;
+		border: 1px solid black;
+		height: 100px;
+		overflow: hidden;
+		height: 150px;
+		background-color: #A8A0A0;
+			}
+}
+
+/* SMALL SCREENS */
 @media (max-width: 767px){
-
-	h1{
-		font-size: 4vw;
-	}
-
-	div {  	
-			font-size: 3.2vw;
-			padding-top: 45px;
-			padding-right: 3px;
-			padding-left: 5px;
-			padding-bottom: 3px;
-			width: 87vw;
-			height: 200px;
-			background-color: #A8A0A0;
-			float: left;
-			margin: 15px;
-			border-style: solid;
-			border-color: black;
-			border-width: 4px;
-			position: relative;
-			font-family: 'Sacramento', cursive;
-			line-height: 140%;
-			overflow: hidden;
-		}
-
-	div > div {
-		width: 15vw;
-		height: 4vw;
-		position: absolute;
-		top: -20px;
-		right: -20px;
-		border-style: solid;
-		border-color: black;
-		border-width: 4px;
-		text-align: center;
-		font-family: 'Permanent Marker', cursive;
-		font-size: 3vw;
-		padding-top: 0px;
-		line-height: normal;
+	.col-sm-12 {
+		width: 100%;
+		float: left;
+		position: relative;
+		border: 1px solid black;
+		height: 100px;
 		overflow: hidden;
-	}
-
-	div #section1{
-		background-color: #ff9999;
-	}
-
-	div #section2{
-		background-color: #cc0000;
-		color: white;
-	}
-
-	div #section3{
-		background-color: #ffffb3;
-	}
-
-	div > span {
-		position: absolute;
-		top: -10px;
-		right: 30px;
-		padding-top: 5px;
-	}
-
-	div #section1 > span {
-		right: 12px;
+		height: 150px;
+		background-color: #A8A0A0;
 	}
 }
-
